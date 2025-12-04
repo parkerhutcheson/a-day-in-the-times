@@ -1,3 +1,5 @@
+[![Powered by NYTimes](https://developer.nytimes.com/files/poweredby_nytimes_65a.png?v=1583354208350)](https://developer.nytimes.com/)
+
 # A Day in the Times
 View an archived New York Times article from 10, 25, 50 or 100 years ago.
 
@@ -26,5 +28,6 @@ Feel free to create an issue, and then make a pull request to add additional fea
 All content from the API is provided by the New York Times Company ("NYT"). Please read their terms at [NYT Developer Terms](https://developer.nytimes.com/terms).
 
 <a href="https://developer.nytimes.com/">
-  <img src="https://developer.nytimes.com/files/poweredby_nytimes_200c.png?v=1583354208354" alt="Powered by NYTimes" width="200" height="40">
+  <img src="https://developer.nytimes.com/files/poweredby_nytimes_200a.png?v=1583354208344" alt="Powered by NYTimes" width="200" height="40">
 </a>
+
