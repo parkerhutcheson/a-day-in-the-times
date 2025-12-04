@@ -24,3 +24,7 @@ Feel free to create an issue, and then make a pull request to add additional fea
 
 ### Terms
 All content from the API is provided by the New York Times Company ("NYT"). Please read their terms at [NYT Developer Terms](https://developer.nytimes.com/terms).
+
+<a href="https://developer.nytimes.com/">
+  <img src="https://developer.nytimes.com/files/poweredby_nytimes_200c.png?v=1583354208354" alt="Powered by NYTimes" width="200" height="40">
+</a>
