@@ -1,6 +1,5 @@
 "use client";
 
-import { useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { useHistoricalArticle } from "../hooks/useHistoricalArticle";
 import Image from "next/image";
@@ -32,7 +31,17 @@ export default function LookBackSection() {
                     ))}
                 </div>
 
-                {error && <p className="text-red-600 text-sm">{error}</p>}
+                {error && (
+                    <div className="space-y-1">
+                        {/* Simple client-facing message */}
+                        <p className="text-red-600 text-sm">
+                            An error occurred when attempting to fetch an article. Wait a few moments, and try again.
+                        </p>
+
+                        {/* (Optional) Original detailed error for you */}
+                        <p className="text-red-600 text-xs opacity-70">{error}</p>
+                    </div>
+                )}
             </div>
 
             <AnimatePresence mode="wait">
@@ -48,7 +57,7 @@ export default function LookBackSection() {
                         <div className="flex flex-col sm:flex-row gap-6">
                             <div className="w-full sm:w-1/3">
                                 {article.multimedia?.default?.url ? (
-                                    <div className="relative w-full aspect-[4/3] overflow-hidden rounded">
+                                    <div className="relative w-full aspect-[4/3] overflow-hidden">
                                         <Image
                                             src={article.multimedia.default.url}
                                             alt={article.headline?.main || "Article image"}
