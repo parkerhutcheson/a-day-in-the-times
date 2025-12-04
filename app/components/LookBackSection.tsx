@@ -33,12 +33,9 @@ export default function LookBackSection() {
 
                 {error && (
                     <div className="space-y-1">
-                        {/* Simple client-facing message */}
                         <p className="text-red-600 text-sm">
                             An error occurred when attempting to fetch an article. Wait a few moments, and try again.
                         </p>
-
-                        {/* (Optional) Original detailed error for you */}
                         <p className="text-red-600 text-xs opacity-70">{error}</p>
                     </div>
                 )}
